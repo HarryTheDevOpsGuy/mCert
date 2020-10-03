@@ -1,3 +1,8 @@
+# mCert Version
+ **Version**        : v0.0.3 <br>
+ **Release Date**   : 03-Oct-20 <br>
+
+
 #### What is mCert ?
 mCert is small script to notify before ssl expiration. it will help you to renew your ssl before getting expired.
 
@@ -15,7 +20,7 @@ if you want get notification on your email you must need to install mSlack. if y
 
 ##### Step 1: Install mCert.
 ```bash
-sudo curl -sL "https://github.com/harry41/mSend/raw/master/tools/mcert" -o /usr/bin/mcert
+sudo curl -sL "https://github.com/HarryTheDevOpsGuy/mcert/raw/master/mcert" -o /usr/bin/mcert
 sudo chmod +x /usr/bin/mcert
 
 # Verify installation
