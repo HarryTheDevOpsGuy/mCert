@@ -1,5 +1,5 @@
 # mCert Version
- **Version**        : v0.0.7 <br>
+ **Version**        : v0.0.8 <br>
  **Release Date**   : 29-Oct-20 <br>
 
 
@@ -85,3 +85,11 @@ www.apple.com
 mcert -f "/opt/domains.txt" -s "#devops" -e "your_email@domain.com" -x 60 -V
 ```
 * `-f` - to provide domain list file path.
+
+
+#### Email Notification Template | Report
+
+ ![mCert email alert templates](https://raw.githubusercontent.com/HarryTheDevOpsGuy/mCert/master/assets/img/email_snapshot.png)
+
+
+#### Thanks you
