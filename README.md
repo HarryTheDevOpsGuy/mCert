@@ -1,6 +1,6 @@
 # mCert Version
- **Version**        : v0.0.8 <br>
- **Release Date**   : 29-Oct-20 <br>
+ **Version**        : v0.0.9 <br>
+ **Release Date**   : 16-Jan-21 <br>
 
 
  [![mCert - Monitor your SSL Certificate Smartly](http://img.youtube.com/vi/iR8SUlDbVSg/0.jpg)](https://www.youtube.com/watch?v=iR8SUlDbVSg "Get SSL Notification before SSL getting expired")
@@ -23,7 +23,7 @@ if you want get notification on your email you must need to install mSlack. if y
 
 ##### Step 1: Install mCert.
 ```bash
-sudo curl -sL "https://github.com/HarryTheDevOpsGuy/mcert/raw/master/mcert" -o /usr/bin/mcert
+sudo curl -sL "https://github.com/HarryTheDevOpsGuy/mCert/raw/master/$(uname -p)/mcert" -o /usr/bin/mcert
 sudo chmod +x /usr/bin/mcert
 
 # Verify installation
