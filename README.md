@@ -1,5 +1,5 @@
 # mCert Version
- **Version**        : v0.1.1 <br>
+ **Version**        : v0.1.2 <br>
  **Release Date**   : 27-Jan-21 <br>
 
 
@@ -90,6 +90,8 @@ mcert -f "/opt/domains.txt" -s "#devops" -e "your_email@domain.com" -x 60 -V
 #### Email Notification Template | Report
 
  ![mCert email alert templates](https://raw.githubusercontent.com/HarryTheDevOpsGuy/mCert/master/assets/img/email_snapshot.png)
+
+ ![mCert email alert templates](https://cdn.jsdelivr.net/gh/mCloud-Automation/mData/images/mCert_Email.png)
 
 
 #### Thanks you
