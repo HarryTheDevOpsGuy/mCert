@@ -1,5 +1,5 @@
 # mCert Version
- **Version**        : v0.1.4 <br>
+ **Version**        : v0.1.5 <br>
  **Release Date**   : 11-Jul-21 <br>
 
 
@@ -96,7 +96,7 @@ mcert -f "/opt/domains.txt" -s "#devops" -e "your_email@domain.com" -x 60 -V
  ![mCert email alert templates](https://cdn.jsdelivr.net/gh/mCloud-Automation/mData/images/mCert_Email.png)
 
  #### Do you want monitor your website free of cost ?
- **Yes**, its free of cost, you can follow you can submit your websites and email id, and we will notify you accordingly.
+ **Yes**, its free of cost, you can submit your websites and email id, and we will notify you accordingly.
  **Google form** : [mCert-Tracker](https://forms.gle/ixYgdWH97P6R12A27)
 
 #### Thanks you
