@@ -6,7 +6,7 @@
  [![mCert - Monitor your SSL Certificate Smartly](http://img.youtube.com/vi/iR8SUlDbVSg/0.jpg)](https://www.youtube.com/watch?v=iR8SUlDbVSg "Get SSL Notification before SSL getting expired")
 
 
-**Lets Monitor SSL with mCert free of cost ** : [mCert-Tracker - Demo ](https://forms.gle/ixYgdWH97P6R12A27)
+**Lets Monitor SSL with mCert free of cost** : [mCert-Tracker - Demo ](https://forms.gle/ixYgdWH97P6R12A27)
 
 #### What is mCert ?
 mCert is small script to notify before ssl expiration. it will help you to renew your ssl before getting expired.
