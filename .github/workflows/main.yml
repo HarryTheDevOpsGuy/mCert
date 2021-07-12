@@ -53,7 +53,7 @@ jobs:
       # Check SSL certs
       - name: Check SSL Certificate Status
         run: |
-          mcert -V 
+          mcert -q 
           
 #       - name: Push changes to repo
 #         run: |
