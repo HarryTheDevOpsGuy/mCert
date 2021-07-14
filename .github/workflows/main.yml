@@ -53,7 +53,8 @@ jobs:
       # Check SSL certs
       - name: Check SSL Certificate Status
         run: |
-          mcert -q 
+          mcert -V > Cert-Status.txt
+          msend -t mcloudautomation@gmail.com -s "SSL Check" -m "Please Check attached file" -a Cert-Status.txt 
           
 #       - name: Push changes to repo
 #         run: |
