@@ -55,7 +55,7 @@ jobs:
       - name: Check SSL Certificate Status
         run: |
           mcert -V > Cert-Status.txt
-          mslack file upload --file Cert-Status.txt --title "$GITHUB_RUN_ID|$GITHUB_WORKFLOW |Status" --filter '.file.url_private' --channels '#devops'
+          mslack file upload --file Cert-Status.txt --filetype snippet --title "$GITHUB_RUN_NUMBER|$GITHUB_WORKFLOW - Status" --filter '.file.url_private' --channels '#devops'
           
 #       - name: Push changes to repo
 #         run: |
