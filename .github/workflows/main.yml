@@ -53,9 +53,8 @@ jobs:
       # Check SSL certs
       - name: Check SSL Certificate Status
         run: |
-          mcert -V 
-          #> Cert-Status.txt
-          #msend -t mcloudautomation@gmail.com -s "SSL Check" -m "Please Check attached file" -a Cert-Status.txt 
+          mcert -V > Cert-Status.txt
+          mslack file upload --file Cert-Status.txt --title "$GITHUB_RUN_ID|$GITHUB_WORKFLOW |Status" --filter '.file.url_private' --channels '#devops'
           
 #       - name: Push changes to repo
 #         run: |
