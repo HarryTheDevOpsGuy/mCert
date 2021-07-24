@@ -34,10 +34,11 @@ jobs:
         REPLY_EMAIL_ADDRESS: 'Harry <HarryTheDevOpsGuy@gmail.com>'
         # mCert variables
         # for Debug only
+        EMAIL_NOTIFICATION: 'false'
         FORCE_EMAIL_TO: HarryTheDevOpsGuy@gmail.com
         # TO read 1-10 raws from gsheet.
         LINE_RANGE: "1,10p"
-        EMAIL_NOTIFICATION: 'true'
+        
        
         GOOGLE_SHEET: ${{ secrets.DEFAULT_GOOGLE_SHEET }} 
         #SLACK_ALERT_REPEAT_INTERVAL: '120'
