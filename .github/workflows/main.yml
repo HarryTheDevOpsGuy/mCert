@@ -35,7 +35,7 @@ jobs:
         # mCert variables
         # for Debug only
         FORCE_EMAIL_TO: HarryTheDevOpsGuy@gmail.com
-        LINE_RANGE: "1,4p"
+        LINE_RANGE: "1,3p"
         EMAIL_NOTIFICATION: 'true'
        
         GOOGLE_SHEET: ${{ secrets.DEFAULT_GOOGLE_SHEET }} 
@@ -78,7 +78,7 @@ jobs:
         # mCert variables
         # for Debug only
         FORCE_EMAIL_TO: HarryTheDevOpsGuy@gmail.com
-        LINE_RANGE: "5,5p"
+        LINE_RANGE: "4,5p"
         EMAIL_NOTIFICATION: 'true'
        
         GOOGLE_SHEET: ${{ secrets.DEFAULT_GOOGLE_SHEET }} 
