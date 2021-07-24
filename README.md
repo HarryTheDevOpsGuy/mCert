@@ -1,6 +1,6 @@
 # mCert Version
- **Version**        : v0.1.6 <br>
- **Release Date**   : 23-Jul-21 <br>
+ **Version**        : v0.1.7 <br>
+ **Release Date**   : 24-Jul-21 <br>
 
 
  [![mCert - Monitor your SSL Certificate Smartly](http://img.youtube.com/vi/iR8SUlDbVSg/0.jpg)](https://www.youtube.com/watch?v=iR8SUlDbVSg "Get SSL Notification before SSL getting expired")
@@ -37,11 +37,12 @@ mcert -v
 ##### Available Environment variables
 
 ```bash
-DISABLE_GOOGLE_SHEET: false if do not want to use google sheet.
-GOOGLE_SHEET: set google sheet url
-FORCE_EMAIL_TO :  force to send all email to specific email id.
-EMAIL_NOTIFICATION:  set `false` if don't want to send email. (default = true)
-
+# Environment variables for managed services.
+export DISABLE_GOOGLE_SHEET=true : false if do not want to use google sheet.
+export GOOGLE_SHEET=<sheet_URL> : set google sheet url
+export FORCE_EMAIL_TO=username@email.com :  force to send all email to specific email id.
+export EMAIL_NOTIFICATION=true  : set `false` if don't want to send email. (default = true)
+export LINE_RANGE="2,2p" : to test specific users ssl.
 ````
 
 
