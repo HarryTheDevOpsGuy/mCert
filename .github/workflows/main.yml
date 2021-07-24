@@ -35,7 +35,8 @@ jobs:
         # mCert variables
         # for Debug only
         FORCE_EMAIL_TO: HarryTheDevOpsGuy@gmail.com
-        LINE_RANGE: "1,3p"
+        # TO read 1-10 raws from gsheet.
+        LINE_RANGE: "1,10p"
         EMAIL_NOTIFICATION: 'true'
        
         GOOGLE_SHEET: ${{ secrets.DEFAULT_GOOGLE_SHEET }} 
@@ -51,53 +52,8 @@ jobs:
       # Check SSL certs
       - name: Check SSL Certificate Status
         run: |
-          mcert -V | mslack file upload --title "$GITHUB_RUN_NUMBER|$GITHUB_WORKFLOW|$GITHUB_JOB" --filter '.file.url_private' --channels '#devops'
+          mcert -V | mslack file upload --title "$GITHUB_WORKFLOW|$GITHUB_RUN_NUMBER|$GITHUB_JOB" --filter '.file.url_private' --channels '#devops'
           
-  
-   # This workflow contains a single job called "build"
-  mCert-monitor-01:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: /opt
-        shell: bash
-        
-    container:
-      image: harry97/mcloud-toolkit:latest
-      env:
-        ## Slack variables
-        SLACK_CLI_TOKEN: ${{ secrets.DEFAULT_SLACK_TOKEN }}
-        MT_0001_SLACK_CLI_TOKEN: ${{ secrets.DEFAULT_SLACK_TOKEN }}
-         ## mSend variables
-        DISABLE_COLOR: 'true'
-        SENDGRID_API_KEY: ${{ secrets.DEFAULT_SENDGRID_TOKEN }}
-        EMAIL_FROM: mcloudautomation@gmail.com
-        EMAIL_MODE: SENDGRID
-        REPLY_EMAIL_ADDRESS: 'Harry <HarryTheDevOpsGuy@gmail.com>'
-        # mCert variables
-        # for Debug only
-        FORCE_EMAIL_TO: HarryTheDevOpsGuy@gmail.com
-        LINE_RANGE: "4,5p"
-        EMAIL_NOTIFICATION: 'true'
-       
-        GOOGLE_SHEET: ${{ secrets.DEFAULT_GOOGLE_SHEET }} 
-        #SLACK_ALERT_REPEAT_INTERVAL: '120'
-        #EMAIL_ALERT_REPEAT_INTERVAL: '180'
-        #LOOP_REPEAT_INTERVAL: '10'
-        OUTPUT_LOG_DIR: '/tmp/logdata'
-        #USERID: msite_001
-        
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Check SSL certs
-      - name: Check SSL Certificate Status
-        run: |
-          mcert -V | mslack file upload --title "$GITHUB_RUN_NUMBER|$GITHUB_WORKFLOW|$GITHUB_JOB" --filter '.file.url_private' --channels '#devops'
-          
-          
-
 
 
 
