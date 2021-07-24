@@ -23,19 +23,22 @@ jobs:
     container:
       image: harry97/mcloud-toolkit:latest
       env:
+        ## Slack variables
         SLACK_CLI_TOKEN: ${{ secrets.DEFAULT_SLACK_TOKEN }}
         MT_0001_SLACK_CLI_TOKEN: ${{ secrets.DEFAULT_SLACK_TOKEN }}
+         ## mSend variables
+        DISABLE_COLOR: 'false'
         SENDGRID_API_KEY: ${{ secrets.DEFAULT_SENDGRID_TOKEN }}
         EMAIL_FROM: mcloudautomation@gmail.com
         EMAIL_MODE: SENDGRID
         REPLY_EMAIL_ADDRESS: 'Harry <HarryTheDevOpsGuy@gmail.com>'
-        EMAIL_NOTIFICATION: 'true'
+        # mCert variables
         # for Debug only
         FORCE_EMAIL_TO: HarryTheDevOpsGuy@gmail.com
         LINE_RANGE: "1,4p"
-        
-        GOOGLE_SHEET: ${{ secrets.DEFAULT_GOOGLE_SHEET }}
-        
+        EMAIL_NOTIFICATION: 'true'
+       
+        GOOGLE_SHEET: ${{ secrets.DEFAULT_GOOGLE_SHEET }} 
         #SLACK_ALERT_REPEAT_INTERVAL: '120'
         #EMAIL_ALERT_REPEAT_INTERVAL: '180'
         #LOOP_REPEAT_INTERVAL: '10'
