@@ -51,7 +51,7 @@ jobs:
       # Check SSL certs
       - name: Check SSL Certificate Status
         run: |
-          mcert -V | mslack file upload --title "$GITHUB_RUN_NUMBER|$GITHUB_WORKFLOW|$GITHUB_JOB"" --filter '.file.url_private' --channels '#devops'
+          mcert -V | mslack file upload --title "$GITHUB_RUN_NUMBER|$GITHUB_WORKFLOW|$GITHUB_JOB" --filter '.file.url_private' --channels '#devops'
           
   
    # This workflow contains a single job called "build"
