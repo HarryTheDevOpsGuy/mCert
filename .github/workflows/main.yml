@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: mCert
+name: mCert | TrackSSL 
 
 # Controls when the workflow will run
 on:
@@ -52,7 +52,7 @@ jobs:
       # Check SSL certs
       - name: Check SSL Certificate Status
         run: |
-          mcert -V | mslack file upload --title "$GITHUB_JOB_$GITHUB_RUN_NUMBER" --comment "WORKFLOW: \`$GITHUB_WORKFLOW\` \n Build Number : \`$GITHUB_RUN_NUMBER\` \n $GITHUB_JOB|$GITHUB_EVENT_NAME" --filter '.file.url_private' --channels '#devops'
+          mcert -V | mslack file upload --title "${GITHUB_JOB}_${GITHUB_RUN_NUMBER}" --comment "\`$GITHUB_RUN_NUMBER\`| \`$GITHUB_WORKFLOW\` | \`$GITHUB_JOB\` has been executed by \`$GITHUB_EVENT_NAME\`" --filter '.file.url_private' --channels '#devops'
           
 
 
