@@ -30,7 +30,9 @@ jobs:
         EMAIL_MODE: SENDGRID
         REPLY_EMAIL_ADDRESS: 'Harry <HarryTheDevOpsGuy@gmail.com>'
         EMAIL_NOTIFICATION: 'true'
+        # for Debug only
         FORCE_EMAIL_TO: HarryTheDevOpsGuy@gmail.com
+        LINE_RANGE: "1,4p"
         
         GOOGLE_SHEET: ${{ secrets.DEFAULT_GOOGLE_SHEET }}
         
