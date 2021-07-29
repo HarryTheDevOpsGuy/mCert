@@ -34,7 +34,7 @@ jobs:
         REPLY_EMAIL_ADDRESS: 'Harry <HarryTheDevOpsGuy@gmail.com>'
         # mCert variables
         # for Debug only
-        EMAIL_NOTIFICATION: 'false'
+        EMAIL_NOTIFICATION: 'true'
         FORCE_EMAIL_TO: HarryTheDevOpsGuy@gmail.com
         # TO read 1-10 raws from gsheet.
         LINE_RANGE: "1,10p"
