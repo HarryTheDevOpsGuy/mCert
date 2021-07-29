@@ -12,8 +12,6 @@ on:
     inputs:
       force_email:
         description: 'Enter Your Email ID'
-        required: true
-        options: ['HarryTheDevOpsGuy@gmail.com', '']
         default: ''
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
