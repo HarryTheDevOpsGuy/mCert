@@ -9,6 +9,10 @@ on:
     - cron:  '0 4 * * 5'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      force_email:
+        description: 'Enter Your Email ID'     
+        default: ''
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
