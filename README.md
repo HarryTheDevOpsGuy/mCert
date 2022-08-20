@@ -1,6 +1,6 @@
 # mCert Version
- **Version**        : v0.1.8 <br>
- **Release Date**   : 29-Jul-21 <br>
+ **Version**        : v0.1.9 <br>
+ **Release Date**   : 20-Aug-22 <br>
 
 
  [![mCert - Monitor your SSL Certificate Smartly](http://img.youtube.com/vi/iR8SUlDbVSg/0.jpg)](https://www.youtube.com/watch?v=iR8SUlDbVSg "Get SSL Notification before SSL getting expired")
