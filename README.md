@@ -1,12 +1,13 @@
 # mCert Version
- **Version**        : v0.2.0 <br>
+ **Version**        : v0.2.1 <br>
  **Release Date**   : 17-Sep-22 <br>
 
 
  [![mCert - Monitor your SSL Certificate Smartly](http://img.youtube.com/vi/iR8SUlDbVSg/0.jpg)](https://www.youtube.com/watch?v=iR8SUlDbVSg "Get SSL Notification before SSL getting expired")
 
-**You can support us by** -> [Joining Our DevOps Group](https://t.me/TheDevOpsProfessionals)
-**Lets Monitor SSL with mCert free of cost** : [mCert-Tracker - Demo ](https://harrythedevopsguy.medium.com/monitor-website-uptime-status-free-of-cost-311d87d0b991)
+- **You can support us by** -> [Joining Our DevOps Group](https://t.me/TheDevOpsProfessionals)
+
+- **Lets Monitor SSL with mCert free of cost** : [mCert-Tracker - Demo ](https://harrythedevopsguy.medium.com/monitor-website-uptime-status-free-of-cost-311d87d0b991)
 
 
 
@@ -21,7 +22,7 @@ There are two Notification methods are available. you can use both or any one.
 #### Prerequisite
 if you want get notification on your email you must need to install mSlack. if you want to get slack notification you must need to install mSlack accordingly. or you can install and configure both if you wish to get notification on both.
 
- - mSend - To get email notification - [Installation steps](https://github.com/harry41/mSend)
+ - mSend - To get email notification - [Installation steps](https://github.com/HarryTheDevOpsGuy/mSend)
  - mSlack - To get slack notification - It will install automatically.
 
 
@@ -58,7 +59,7 @@ mCert [OPTION]
 -v               Display version
 ```
 
-#### example 1
+#### Example 1
 To Test `www.google.com` ssl certificate if certificate expiry remaining day less than 60 day. it will send email notification at `your_email@domain.com`.
 
 ```bash
@@ -102,7 +103,8 @@ mcert -f "/opt/domains.txt" -s "#devops" -e "your_email@domain.com" -x 60 -V
 
  #### Do you want monitor your website free of cost ?
  **Yes**, its free of cost, you can submit your websites and email id, and we will notify you accordingly.
- **Google form** : [mCert-Tracker](https://harrythedevopsguy.medium.com/monitor-website-uptime-status-free-of-cost-311d87d0b991)
+
+ **Step To submit New Domain** : [mCert-Tracker](https://harrythedevopsguy.medium.com/monitor-website-uptime-status-free-of-cost-311d87d0b991)
 
 #### Thanks you
-**Feel free to join us ** -> [The DevOps Professionals Group](https://t.me/TheDevOpsProfessionals)
+**Feel free to join us** -> [The DevOps Professionals Group](https://t.me/TheDevOpsProfessionals)
